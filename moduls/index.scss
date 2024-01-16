@@ -1,0 +1,610 @@
+@import "mixins";
+@import "..//moduls/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-1 {
+    padding-top: 53px;
+    padding-bottom: 35px;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(50deg, $primary, $secondary);
+}
+
+.background-img {
+    background-image: url(../img/bg1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 150px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+header ul {
+    margin-left: 70px;
+    box-sizing: border-box;
+}
+
+
+header ul:first-child {
+    margin-left: 144px;
+}
+
+header ul:last-child {
+    margin-right: 0;
+}
+
+header li {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+}
+
+header a {
+    @include source_sans-400-14;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 14px;
+}
+
+header a:hover {
+    color: $hover;
+}
+
+ul:hover svg {
+    fill: $white;
+}
+
+header a:active {
+    color: $active;
+}
+
+header ul:nth-child(4) {
+    margin-right: 110px;
+}
+
+.links {
+    display: flex;
+}
+
+.border {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: $white solid 1px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.border:hover {
+    background-color: $hover;
+    border: none;
+}
+
+.border:active {
+    background-color: $active;
+    border: none;
+}
+
+.border svg {
+    margin-top: 17px;
+    fill: $white
+}
+
+.border:hover svg {
+    fill: $primary
+}
+
+.borders {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: $white solid 1px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.borders:hover {
+    background-color: $hover;
+    border: none;
+}
+
+.borders:active {
+    background-color: $active;
+    border: none;
+}
+
+.borders svg {
+    margin-top: 12px;
+    fill: $white;
+}
+
+.borders:hover svg {
+    fill: $active;
+}
+
+.borders:active svg {
+    fill: $hover;
+}
+
+.sect-1-content {
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 180px;
+}
+
+
+.drops {
+    position: absolute;
+    position: fixed;
+    width: 30px;
+    height: 200px;
+    background-color: $primary;
+    z-index: 3;
+    right: 0;
+    border-radius: 20% 0 0 20%;
+    text-align: center;
+
+}
+
+.drops a {
+    margin-bottom: 28px;
+    display: block;
+
+}
+
+.text_sect-1 {
+    text-align: center;
+}
+
+
+.text_sect-1 h1 {
+    @include montserat-700-80;
+    margin-bottom: 20px;
+}
+
+.text_sect-1 p {
+    @include montserat-400-18;
+    color: $white;
+    letter-spacing: 5.4px;
+}
+
+
+
+// SECTION 1 END
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: $fonts;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    @include montserat-700-44;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.sect-2-content {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 146px;
+}
+
+.color-box {
+    width: 585px;
+    height: 470px;
+    background: $primary;
+}
+
+.sect-2-left-side {
+    position: relative;
+    width: 850px;
+}
+
+.sect-2-left-side img {
+    width: 630px;
+    height: 470px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 45px;
+    left: 160px;
+}
+
+.sect-2-right-side h4 {
+    @include montserat-400-22;
+}
+
+.sect-2-right-side h3 {
+    @include montserat-700-44;
+    margin-bottom: 19px;
+}
+
+.sect-2-right-side p {
+    @include open-sans-400-18;
+    margin-bottom: 40px;
+}
+
+.sect-2-right-side button {
+    @include montserat-400-14;
+    @include button;
+    margin-bottom: 60px;
+    color: $black;
+}
+
+.link a {
+    margin-left: 10px;
+    @include link;
+}
+
+// SECTION 2 END
+
+#sect-3-left-side {
+    margin-left: 160px;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect-3-right-side {
+    position: relative;
+}
+
+.sect-3-right-side img {
+    width: 630px;
+    height: 470px;
+    position: absolute;
+    right: 160px;
+    top: 45px;
+}
+
+#color-box-2 {
+    width: 585px;
+    height: 470px;
+    background-color: $secondary;
+    float: right;
+}
+
+.section-3 {
+    display: flex;
+    align-items: end;
+    margin-bottom: 150px;
+}
+
+// SECTION 3 END
+
+.section-4 {
+
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(237deg, #3C7FD4 11.16%, #24CCFA 89.18%);
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.section-4 .line {
+    background-color: $white;
+    margin-top: 0px;
+}
+
+.section-4 h2 {
+    color: $white;
+    margin-bottom: 90px;
+}
+
+.content-news {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.slider-line {
+    display: flex;
+    gap: 30px;
+    width: 1970px;
+    position: relative;
+    transition: 1s;
+}
+
+.slider {
+    overflow: hidden;
+    width: 1170px;
+}
+
+.content-news button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: $white solid 1px;
+}
+
+.content-news button:hover {
+    background-color: $hover;
+}
+
+.content-news button:active {
+    background-color: $active;
+}
+
+button svg {
+    fill: white;
+}
+
+button:hover svg {
+    fill: $secondary;
+}
+
+button:active svg {
+    fill: $white;
+}
+
+.card-cont {
+    background-color: $white;
+    width: 370px;
+    padding-top: 38px;
+    padding-left: 20px;
+    padding-bottom: 38px;
+    box-sizing: border-box
+}
+
+.card-img {
+    width: 370px;
+    height: 240px;
+}
+
+.card-cont h5 {
+    @include montserat-700-22;
+    margin-bottom: 15px;
+}
+
+.card-cont h6 {
+    @include open-sans-400-18;
+    margin-bottom: 46px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.inform {
+    align-items: center;
+    margin-left: 20px;
+}
+
+.inform p {
+    @include montserat-400-18;
+    margin-bottom: 8px;
+}
+
+.inform text {
+    @include montserat-400-14;
+}
+
+.paginations {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-circle {
+    margin-right: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+// SECTION 4 END
+
+.pictures {
+    margin-bottom: 60px;
+    margin-left: 160px;
+    display: flex;
+
+}
+
+.first-pctr {
+    position: relative;
+}
+
+.srch svg {
+    position: absolute;
+    bottom: 200px;
+    left: 250px;
+}
+
+
+.first-pctr img {
+    width: 580px;
+    height: 438px;
+    margin-right: 18px;
+}
+
+.second-clmn img,
+.third-clmn img {
+    display: block;
+    margin-right: 18px;
+    margin-bottom: 10px;
+}
+
+.section-5 button {
+    @include button;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+}
+
+// SECTION 5 END
+
+.last-sect {
+    position: relative;
+}
+
+#map iframe {
+    width: 100%;
+}
+
+// #map {
+//     width: 100%;
+//     height: 700px;
+//     background-color: blue;
+// }
+
+.contacts {
+    width: 770px;
+    height: 450px;
+    background-color: $white;
+    background-image: url(../img/contacts-bg.png);
+    background-position: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    bottom: 400px;
+    left: 400px;
+    z-index: 2;
+}
+
+.last-line {
+    width: 100px;
+    height: 1px;
+    background: $fonts;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.contacts h2 {
+    @include montserat-700-44;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    margin-left: 60px;
+}
+
+.form {
+    margin-left: 54px;
+    position: relative;
+    z-index: 3;
+}
+
+form button {
+    @include montserat-400-14;
+    width: 140px;
+    height: 50px;
+    color: $black;
+    border: 1px solid $fonts;
+    background-color: $white;
+}
+
+.form-group {
+    margin-bottom: 26px;
+}
+
+::placeholder {
+    @include montserat-400-18;
+}
+
+input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid $fonts;
+    opacity: 0.2;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-bottom: 1px solid $black;
+    opacity: inherit;
+}
+
+.footer {
+    height: 549px;
+    width: 100%;
+    background: linear-gradient(50deg, $primary, $secondary);
+}
+
+.footer-cont {
+    width: 790px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 203px;
+    margin-left: 400px;
+    z-index: 2;
+}
+
+.footer-cont p {
+    margin-top: 41px;
+    @include montserat-400-14;
+    color: $white;
+
+}
+
+button:hover {
+    background-color: $hover;
+    color: $active;
+    border: none;
+}
+
+button:active {
+    background-color: $active;
+    color: $white;
+    border: none;
+}
+
+.background-img-footer {
+    background-image: url(../img/last\ bg.png);
+    width: 100%;
+    height: 549px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-position: bottom;
+}
+
+// FOOTER END

@@ -1,0 +1,100 @@
+@mixin source_sans-400-14 {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin open-sans-400-18 {
+    color: #2C4058;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+@mixin montserat-700-80 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 8px;
+}
+
+@mixin montserat-400-18 {
+    color: #2C4058;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin montserat-400-14 {
+    color: #55B7FF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8px;
+}
+
+@mixin montserat-700-44 {
+    color: #2C4058;
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin montserat-700-22 {
+    color: #2C4058;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin montserat-400-22 {
+    color: #2C4058;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin montserat-400-14 {
+    color: #55B7FF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin button {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #2C4058;
+    padding: 16px, 41px;
+    background-color: #FFF;
+}
+
+@mixin link {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
